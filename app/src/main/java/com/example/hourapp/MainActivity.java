@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         String date = data.getStringExtra(AddingScreen.DATE_KEY);
             int noOfHours = Integer.parseInt(data.getStringExtra(AddingScreen.NOOFHOURS_KEY));
             String desc_S = data.getStringExtra(AddingScreen.DESC_KEY);
-            Log.d("TAG-V", "onActivityResult: Date " + date);
-            Log.d("TAG-V", "onActivityResult: Hours" + noOfHours);
+         //   Log.d("TAG-V", "onActivityResult: Date " + date);
+         //   Log.d("TAG-V", "onActivityResult: Hours" + noOfHours);
 
             Hour hour = new Hour(date, noOfHours, desc_S);
             ViewModel.insert(hour);
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         intent.putExtra(DESC_ID, hour.getDescription());
         intent.putExtra(DATE_ID, hour.getDate());
         intent.putExtra(NO_OF_HOURS_ID, hour.getNoOfHours());
-        Log.d("TAG-V", "onRecordClick: " +  hour.getId());
+        //Log.d("TAG-V", "onRecordClick: " +  hour.getId());
         startActivity(intent);
     }
 }   

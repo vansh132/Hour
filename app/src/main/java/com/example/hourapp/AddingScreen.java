@@ -62,13 +62,13 @@ public class AddingScreen extends AppCompatActivity {
                     String date_s = date.getText().toString();
                     String noOfHours_s = noOfHours.getText().toString();
                     String desc_s = descEt.getText().toString();
-                    Log.d("TAG-V", "onClick: " + date_s + " " + noOfHours_s);
+                   // Log.d("TAG-V", "onClick: " + date_s + " " + noOfHours_s);
                     intent.putExtra(DATE_KEY, date_s);
                     intent.putExtra(NOOFHOURS_KEY, noOfHours_s);
                     intent.putExtra(DESC_KEY, desc_s);
                     setResult(RESULT_OK, intent);
                 } else {
-                    Log.d("TAG-V", "onClick: Cancelled");
+                    //Log.d("TAG-V", "onClick: Cancelled");
                     setResult(RESULT_CANCELED, intent);
                 }
                 finish();
