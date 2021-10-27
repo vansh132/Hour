@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HourApp</string>
+    <string name="saveButtonText">Save</string>
+    <string name="date_label">Date</string>
+    <string name="time_label">Time</string>
+    <string name="noOfHours_label">No of Hours</string>
+    <string name="description_label">Detailed Description</string>
+    <string name="dateLabel">Date</string>
+    <string name="updateButton">Update</string>
+    <string name="deleteButton">Delete</string>
+</resources>
